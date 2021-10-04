@@ -1,5 +1,4 @@
-var n=10
-print(n)
+
 for i in 1...5
 {
     for _ in stride(from: 5, to: i, by: -1) 
