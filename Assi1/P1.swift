@@ -4,24 +4,25 @@ enum NumError: Error {
 
     var message: String {
         switch self {
-        case .negative: return "ERROR: Marks cannot be negative"
+        case .negative: return "ERROR: Number cannot be negative"
         }
     }
 }
 
 func checkEvenOdd(n: Int) throws {
    if(n<0)
+   {
         throw NumError.negative
     }
     else
     {
       if(n%2==0)
       {
-        print(n+" is Even Number..")
+        print("\(n) is Even Number..")
       }
       else
       {
-        print(n+" is Odd Number..")
+        print("\(n) is Odd Number..")
       }
     }
 }
